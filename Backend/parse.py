@@ -16,6 +16,12 @@ for vacancy_id in vacancies:
     vacancies_id_list.append(title)
     
 salary_list = []
+for salary in vacancies:
+    if vacancy['salary']['from'] == None:
+        title = 'Зарплата не указана'
+    else:
+        title = vacancy['salary']['from']
+    salary_list.append(title)
 
 
 
